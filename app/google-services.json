@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "939498336216",
+    "project_id": "sobatsepatu-752a3",
+    "storage_bucket": "sobatsepatu-752a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939498336216:android:98d647ccb3c8a02b448cad",
+        "android_client_info": {
+          "package_name": "com.nayottama.sobatsepatu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939498336216-834ue6k4c8k2q1saa92gf0mc23g609kt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwH04-F2DSA4rNdbatDpyL3xNjg6Y1n0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939498336216-834ue6k4c8k2q1saa92gf0mc23g609kt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

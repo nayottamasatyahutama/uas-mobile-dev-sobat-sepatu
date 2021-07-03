@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="24dp"
+    android:background="@drawable/textinput"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:id="@+id/layout_head_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Adidas"
+            android:id="@+id/txtMerk"
+            android:layout_weight="3"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Wash"
+            android:id="@+id/txtJenis"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Catatan pesanan"
+        android:id="@+id/txtCatatan"
+        android:layout_below="@+id/layout_head_item"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textEnd"/>
+
+</RelativeLayout>

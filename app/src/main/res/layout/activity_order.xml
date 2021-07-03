@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/layoutOrder"
+            android:padding="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/edtMerk"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/textinput"
+                android:layout_centerHorizontal="true"
+                android:hint="Merk"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="23dp"/>
+
+            <EditText
+                android:id="@+id/edtCatatan"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/textinput"
+                android:layout_centerHorizontal="true"
+                android:hint="Catatan"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:layout_below="@+id/edtMerk"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="23dp"
+                android:paddingTop="23dp"/>
+            <LinearLayout
+                android:id="@+id/layoutHarga"
+                android:layout_below="@+id/edtCatatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biaya"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/txtHarga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 0"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnOrder"
+                android:layout_width="275dp"
+                android:layout_height="52dp"
+                android:layout_below="@+id/layoutHarga"
+                android:layout_marginTop="42dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button"
+                android:text="ORDER"
+                app:backgroundTint="@null"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
